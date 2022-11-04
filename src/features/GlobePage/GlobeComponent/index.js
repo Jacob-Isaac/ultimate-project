@@ -1,6 +1,6 @@
 
 import astronaut from "../../../images/globe2.glb"
-import iosAstronaut from "../../../images/Astronaut.usdz"
+// import iosAstronaut from "../../../images/Astronaut.usdz"
 import { Wrapper, Model } from "./styled";
 // import './style.css';
 
@@ -9,7 +9,7 @@ const Globe = () => (
   <model-viewer
   id="orbit-demo" interpolation-decay="200"
   src={astronaut}
-  ios-src={iosAstronaut}
+  // ios-src={iosAstronaut}
   alt="A 3D model of an astronaut"
   camera-controls
   ar
