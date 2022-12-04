@@ -1,12 +1,11 @@
 import styled from "styled-components";
+import { CenterContent } from "./theme";
 
 export const Wrapper = styled.div`
+${CenterContent};
 width: 100vw;
 height: 100vh;
-display: flex;
 flex-direction: row;
-justify-content: center;
-align-items: center; 
 min-width: 280px;
 background-color: 3E9E9E9;
 `;
