@@ -4,8 +4,11 @@ export const Wrapper = styled.div`
 width: 100vw;
 height: 100vh;
 display: flex;
+flex-direction: row;
 justify-content: center;
 align-items: center; 
+min-width: 280px;
+background-color: 3E9E9E9;
 `;
 
 export const Hello = styled.div`
