@@ -7,13 +7,13 @@ import { ReactComponent as companyName } from "../../images/companyName.svg";
 export const StyledCompanyName = styled(companyName)`
 fill: #D38611;
 stroke: #323232;
-height: 137px;
-width: 137px;
-margin-left: -202px;
-margin-top: 110px;
+height: 100px;
+width: 260px;
+margin-left: -630px;
+margin-top: 260px;
 z-index: 1;
-transform-origin: 50% 3em;
-animation: fadeInAnimation ease 2s;
+/* transform-origin: 80% 3em; */
+/* animation: fadeInAnimation ease 2s;
   animation-iteration-count:  1;
   animation-fill-mode: forwards;
   animation-delay: 4s; //zrobic w react display none na isLoading 4s, a potem juz pokazywac
@@ -24,7 +24,8 @@ animation: fadeInAnimation ease 2s;
     100% {
       opacity: 1;
     } 
- }
+   } */
+ 
 &:hover {
     cursor: default;
    animation: wiggle 2s linear infinite;
@@ -163,11 +164,41 @@ grid-template-rows: repeat(2, 1fr);
 
 export const ObjectOne = styled.div`
 grid-area: 2 / 1 / 3 / 2;
-transition: transform 2s;
-transition-delay: 2s;
-${({ $themes }) => $themes && css`
-transform: translateX(77px); 
-    `};      //   NAPRAWIć 
+-webkit-animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+          @-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(171px);
+            transform: translateX(171px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(171px);
+            transform: translateX(171px);
+  }
+}
+/* animation-name: example; */
+/* transition: transform 2s; */
+/* animation-delay: 2s;
+animation-duration: 10s;
+position: relative;
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  100% {left:77px; top:0px;}
+  0% {right:77px; top:0px;}
+  } */
+
+    
+    //   NAPRAWIć 
 
 
 `;
@@ -194,28 +225,57 @@ font-size: 20px;
 
 export const ObjectSecond = styled.div`
 grid-area: 2 / 3 / 3 / 4;
-animation-name: example3;
-animation-delay: 2s;
-  animation-duration: 2s;
-  position: relative;
-@keyframes example3 {
-  0%   {left:0px; top:0px;}
-  100% {left:77px; top:0px;}
+-webkit-animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+          @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
+  100% {
+    -webkit-transform: translateX(-171px);
+            transform: translateX(-171px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-171px);
+            transform: translateX(-171px);
+  }
+}
+
 
 `;
 
 export const ObjectThird = styled.div`
 
 grid-area: 1 / 2 / 2 / 3;
-animation-name: example2;
-animation-delay: 2s;
-  animation-duration: 2s;
-  position: relative;
-@keyframes example2 {
-  0%   {left:0px; top:0px;}
-  100% {left:0px; top:-70px;}
+-webkit-animation: slide-down 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-down 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+          @-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
+  100% {
+    -webkit-transform: translateY(255px);
+            transform: translateY(255px);
+  }
+}
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(255px);
+            transform: translateY(255px);
+  }
+}
 
 `;
 

@@ -6,6 +6,7 @@ ${CenterContent};
 width: 100vw;
 height: 100vh;
 flex-direction: row;
+gap: 200px;
 min-width: 280px;
 background-color: 3E9E9E9;
 `;
