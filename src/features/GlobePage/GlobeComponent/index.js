@@ -3,6 +3,7 @@ import astronaut from "../../../images/globe2.glb"
 // import iosAstronaut from "../../../images/Astronaut.usdz"
 import { Wrapper, Model } from "./styled";
 // import './style.css';
+import "@google/model-viewer";
 
 const Globe = () => (
 <Model>
