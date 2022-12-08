@@ -2,6 +2,7 @@
   "name": "ultimate-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jacob-isaac.github.io/ultimate-project/",
   "dependencies": {
     "@google/model-viewer": "^2.1.1",
     "@reduxjs/toolkit": "^1.8.6",
